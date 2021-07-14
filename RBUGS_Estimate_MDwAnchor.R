@@ -56,7 +56,7 @@ data_all$rate$match_betasrow <- as.vector(match(data_all$rate$resp_id, data_all$
 data_all$rate$match_betascol <- TRUE
 data_all$rate$match_id <- match(Anchor_stacked[,1], data_all$rate$resp_id)
 
-rm(ind_all, ind_type, indcode_list, indcode)
+rm(ind_all, ind_type, indcode_list)
 if (is.numeric(anchor_bounds)){
   data_all$rate$type <- "Rate"
   data_all$rate$lb <- anchor_bounds[1]
