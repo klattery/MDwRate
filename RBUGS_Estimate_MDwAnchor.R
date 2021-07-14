@@ -35,7 +35,7 @@ kbounds <- c(.1, 3) # Recommend: (.1, 3) for ratings in [0,10].
 ind_all <- as.matrix(c(MD_stacked[,5], Anchor_stacked[,2]))
 ind_type <- rep(2, nrow(ind_all))
 ind_type[1:length(MD_stacked[,5])] <- 1
-colnames(ind_all) <-"Items"
+colnames(ind_all) <-"items"
 
 indcode_list <- list()
 indcode_list[[1]] <- catcode(ind_all, 1, codetype = 1) # Column 5 has MD items
